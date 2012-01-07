@@ -13,7 +13,6 @@
       <InputEndpoint name="Raven" protocol="http" port="8080" />
     </Endpoints>
     <Imports>
-      <Import moduleName="Diagnostics" />
     </Imports>
     <ConfigurationSettings>
       <Setting name="StorageConnectionString" />

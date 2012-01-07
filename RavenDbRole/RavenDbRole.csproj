@@ -92,6 +92,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Debug.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Plugins\Raven.Bundles.Expiration.dll" />
     <Content Include="Raven.Studio.xap" />
@@ -104,6 +105,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Debug.aspx.cs">
+      <DependentUpon>Debug.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Debug.aspx.designer.cs">
+      <DependentUpon>Debug.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

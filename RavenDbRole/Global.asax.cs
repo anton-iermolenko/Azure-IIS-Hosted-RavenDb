@@ -83,6 +83,13 @@
                 // Read port number specified for this Raven instance and set it in configuration
                 var endpoint = RoleEnvironment.CurrentRoleInstance.InstanceEndpoints["Raven"];
                 ravenConfiguration.Port = endpoint.IPEndpoint.Port;
+
+                if (RoleEnvironment.IsEmulated)
+                {
+                    // In emulator only Munin storage is supported
+                    // In production first initialization of database might also produce Disk I/O errors with Esent, but then it works fine
+                    ravenConfiguration.DefaultStorageTypeName = "munin";
+                }
             }
 
             HttpEndpointRegistration.RegisterHttpEndpointTarget();

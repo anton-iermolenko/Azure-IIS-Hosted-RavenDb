@@ -16,6 +16,10 @@
     </Imports>
     <ConfigurationSettings>
       <Setting name="StorageConnectionString" />
+      <Setting name="Raven.Data.CloudContainerName" />
+      <Setting name="Raven.Data.CloudDriveName" />
+      <Setting name="Raven.Data.CloudDriveSize" />
+      <Setting name="Raven.Data.CloudDriveReadCacheSize" />
     </ConfigurationSettings>
     <LocalResources>
       <LocalStorage name="CloudDriveLocalReadCache" cleanOnRoleRecycle="false" sizeInMB="200" />

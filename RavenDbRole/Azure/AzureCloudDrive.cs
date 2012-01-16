@@ -1,4 +1,4 @@
-namespace RavenDbRole.Implementation
+namespace RavenDbRole.Azure
 {
     using System;
     using Microsoft.WindowsAzure;

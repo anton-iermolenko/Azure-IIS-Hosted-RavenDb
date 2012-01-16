@@ -4,6 +4,10 @@
     <Instances count="1" />
     <ConfigurationSettings>
       <Setting name="StorageConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Raven.Data.CloudContainerName" value="raven" />
+      <Setting name="Raven.Data.CloudDriveName" value="DatabaseDrive.vhd" />
+      <Setting name="Raven.Data.CloudDriveSize" value="200" />
+      <Setting name="Raven.Data.CloudDriveReadCacheSize" value="200" />
     </ConfigurationSettings>
   </Role>
 </ServiceConfiguration>

@@ -53,6 +53,9 @@
       <HintPath>..\..\..\..\..\..\..\Windows\System32\inetsrv\Microsoft.Web.Administration.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.WindowsAzure.CloudDrive, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
     <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
@@ -115,13 +118,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Implementation\AzureCloudDrive.cs" />
-    <Compile Include="Implementation\CloudIISConfiguration.cs" />
-    <Compile Include="Implementation\ForwardToRavenResponders.cs" />
-    <Compile Include="Implementation\ForwardToRavenRespondersFactory.cs" />
-    <Compile Include="Implementation\RavenDriveConfiguration.cs" />
+    <Compile Include="Azure\AzureCloudDrive.cs" />
+    <Compile Include="RavenWeb\BootStrapper.cs" />
+    <Compile Include="Azure\CloudIISConfiguration.cs" />
+    <Compile Include="RavenWeb\ForwardToRavenResponders.cs" />
+    <Compile Include="RavenWeb\ForwardToRavenRespondersFactory.cs" />
+    <Compile Include="WebRole\RavenDriveConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebRole.cs" />
+    <Compile Include="WebRole\RavenDbRole.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

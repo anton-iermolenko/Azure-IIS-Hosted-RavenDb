@@ -96,6 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Debug.aspx" />
+    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Plugins\Raven.Bundles.Expiration.dll" />
     <Content Include="Raven.Studio.xap" />

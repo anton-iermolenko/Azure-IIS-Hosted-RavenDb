@@ -1,5 +1,9 @@
-Sample: Azure hosting of RavenDb as Web role
+Update: better solution
 ============================================
+Here is a better sample of RavenDB hosting solution (and more advanced): https://github.com/cloudpowerups/cp-azure-samples/tree/master/CP.Azure.Samples.RavenDB
+
+Sample: Azure hosting of RavenDb as Web role
+-----------------------
 
 This is a sample of how you can host RavenDb as Web role. It is highly recommended to use RavenDB build >602 (which is currently unstable). Version embedded here is 573.
 
